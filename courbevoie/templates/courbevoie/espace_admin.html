@@ -1,0 +1,20 @@
+{% load static %}
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="{% static 'courbevoie/connexion.css' %}" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="logo">
+            <img src="{% static 'courbevoie/images/log0' %}" alt="" />
+        </div>
+        <a id = "deconnexion" href="{% url 'courbevoie:acceuil'%}"> Se déconnecter</a>
+        
+        <div id="container">
+            <!-- zone de choix -->
+            <h1>Bienvenue sur l'espace admin !</h1>
+            <p> Que souhaitez vous faire ? </p>
+            <a id = "admin" href="{% url 'courbevoie:admin'%}"> 1) Gestion des foyers et des magasins</a>
+            <a id = "carte" href="{% url 'courbevoie:carte_admin'%}"> 2) Voir la carte de Courbevoie </a>
+        </div>
+    </body>

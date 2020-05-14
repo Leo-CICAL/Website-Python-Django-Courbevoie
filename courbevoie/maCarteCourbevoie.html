@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7aa460ffe084d0d86053cc4815a7de6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b7aa460ffe084d0d86053cc4815a7de6" ></div>
+        
+</body>
+<script>    
+    
+            var map_b7aa460ffe084d0d86053cc4815a7de6 = L.map(
+                "map_b7aa460ffe084d0d86053cc4815a7de6",
+                {
+                    center: [48.8967, 2.2567],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00d13e35a7b8436db78c7de9d5467472 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var marker_f1376bf9f1fc4b7b9202c63f1099519f = L.marker(
+                [48.8970336, 2.2354627],
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var icon_8435b38ff3de439f9f00f8b598e73faf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "remove-circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1376bf9f1fc4b7b9202c63f1099519f.setIcon(icon_8435b38ff3de439f9f00f8b598e73faf);
+        
+    
+        var popup_ed32319bc9b74e8189c44a83f2ac6a2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a27496cef0514519a528fa30619dc0c2 = $(`<div id="html_a27496cef0514519a528fa30619dc0c2" style="width: 100.0%; height: 100.0%;">Nom du foyer : Virot Nombre de personne infecté 1</div>`)[0];
+            popup_ed32319bc9b74e8189c44a83f2ac6a2b.setContent(html_a27496cef0514519a528fa30619dc0c2);
+        
+
+        marker_f1376bf9f1fc4b7b9202c63f1099519f.bindPopup(popup_ed32319bc9b74e8189c44a83f2ac6a2b)
+        ;
+
+        
+    
+    
+            marker_f1376bf9f1fc4b7b9202c63f1099519f.bindTooltip(
+                `<div>
+                     Cliquer ici
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43cc8c8baac74a1ababf4f2badc31c15 = L.marker(
+                [48.8991441, 2.2608253],
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var icon_1e7b7a3cd7b645eeb6b47ebcc3ba5703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "remove-circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43cc8c8baac74a1ababf4f2badc31c15.setIcon(icon_1e7b7a3cd7b645eeb6b47ebcc3ba5703);
+        
+    
+        var popup_2e088db1dd5743808aa62d14e34d25f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06bbf151889d464eba2591847df5d216 = $(`<div id="html_06bbf151889d464eba2591847df5d216" style="width: 100.0%; height: 100.0%;">Nom du foyer : Dupont Nombre de personne infecté 4</div>`)[0];
+            popup_2e088db1dd5743808aa62d14e34d25f8.setContent(html_06bbf151889d464eba2591847df5d216);
+        
+
+        marker_43cc8c8baac74a1ababf4f2badc31c15.bindPopup(popup_2e088db1dd5743808aa62d14e34d25f8)
+        ;
+
+        
+    
+    
+            marker_43cc8c8baac74a1ababf4f2badc31c15.bindTooltip(
+                `<div>
+                     Cliquer ici
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e80627f71a045c9a37ff9d5d83614fc = L.marker(
+                [48.8966609, 2.2599144],
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var icon_5dff752d0dc64bec83a3bc839093bea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "remove-circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e80627f71a045c9a37ff9d5d83614fc.setIcon(icon_5dff752d0dc64bec83a3bc839093bea0);
+        
+    
+        var popup_b479fdcbd93640ed9da1c314efb0e657 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30b6d8805e1541b3a6b10d1af6acf06f = $(`<div id="html_30b6d8805e1541b3a6b10d1af6acf06f" style="width: 100.0%; height: 100.0%;">Nom du foyer : Durand Nombre de personne infecté 2</div>`)[0];
+            popup_b479fdcbd93640ed9da1c314efb0e657.setContent(html_30b6d8805e1541b3a6b10d1af6acf06f);
+        
+
+        marker_5e80627f71a045c9a37ff9d5d83614fc.bindPopup(popup_b479fdcbd93640ed9da1c314efb0e657)
+        ;
+
+        
+    
+    
+            marker_5e80627f71a045c9a37ff9d5d83614fc.bindTooltip(
+                `<div>
+                     Cliquer ici
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec91f45c11994e7bb0b6c811b4df908f = L.marker(
+                [48.9019561, 2.2618922],
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var icon_8b84603780b34b338a1da263c8892865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec91f45c11994e7bb0b6c811b4df908f.setIcon(icon_8b84603780b34b338a1da263c8892865);
+        
+    
+        var popup_e44c6deae39c4ea5be88b939b0229742 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f99ec86fc275433cb52c60f3225301ce = $(`<div id="html_f99ec86fc275433cb52c60f3225301ce" style="width: 100.0%; height: 100.0%;">Nom du foyer : Martin Nombre de personne guéris 1</div>`)[0];
+            popup_e44c6deae39c4ea5be88b939b0229742.setContent(html_f99ec86fc275433cb52c60f3225301ce);
+        
+
+        marker_ec91f45c11994e7bb0b6c811b4df908f.bindPopup(popup_e44c6deae39c4ea5be88b939b0229742)
+        ;
+
+        
+    
+    
+            marker_ec91f45c11994e7bb0b6c811b4df908f.bindTooltip(
+                `<div>
+                     Cliquer ici
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8803fd2e1b0a430ea8d41c76d3f323ac = L.marker(
+                [48.8942326, 2.2462677],
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var icon_57323ac6597e43729bd811f59548edff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8803fd2e1b0a430ea8d41c76d3f323ac.setIcon(icon_57323ac6597e43729bd811f59548edff);
+        
+    
+        var popup_e214c93dea8d412d8ebbe766e984000d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_196bf4f05cc44eb9b730a2084e63d46d = $(`<div id="html_196bf4f05cc44eb9b730a2084e63d46d" style="width: 100.0%; height: 100.0%;">Nom du foyer : Rochefort Nombre de personne guéris 3</div>`)[0];
+            popup_e214c93dea8d412d8ebbe766e984000d.setContent(html_196bf4f05cc44eb9b730a2084e63d46d);
+        
+
+        marker_8803fd2e1b0a430ea8d41c76d3f323ac.bindPopup(popup_e214c93dea8d412d8ebbe766e984000d)
+        ;
+
+        
+    
+    
+            marker_8803fd2e1b0a430ea8d41c76d3f323ac.bindTooltip(
+                `<div>
+                     Cliquer ici
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_ba808148a1c3484696fca352f542b7c1 = L.featureGroup(
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var polygon_b618d0b2f8594378a42d9b4eb8589046 = L.polygon(
+                [[48.89648, 2.26473], [48.902543, 2.282594], [48.90551, 2.269977], [48.901929, 2.259312]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ba808148a1c3484696fca352f542b7c1);
+        
+    
+            polygon_b618d0b2f8594378a42d9b4eb8589046.bindTooltip(
+                `<div>
+                     Bécon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_2901ed86631d4d4290c9ecf60a2288a5 = L.polygon(
+                [[48.887181, 2.253214], [48.889978, 2.256411], [48.897877, 2.247367], [48.895066, 2.240715], [48.893565, 2.238011]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ba808148a1c3484696fca352f542b7c1);
+        
+    
+            polygon_2901ed86631d4d4290c9ecf60a2288a5.bindTooltip(
+                `<div>
+                     Gambetta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_f606fad3b2804bbb96fbb451c7f5d8f7 = L.polygon(
+                [[48.894007, 2.238305], [48.896435, 2.243649], [48.902508, 2.240967], [48.900624, 2.231483], [48.895985, 2.233949], [48.894853, 2.235816]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ba808148a1c3484696fca352f542b7c1);
+        
+    
+            polygon_f606fad3b2804bbb96fbb451c7f5d8f7.bindTooltip(
+                `<div>
+                     Faubourg de l'Arche
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_c293eff6ca1b41f9aefa8344fac1033a = L.polygon(
+                [[48.889978, 2.256411], [48.89648, 2.26473], [48.901929, 2.259312], [48.897877, 2.247367]],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ba808148a1c3484696fca352f542b7c1);
+        
+    
+            polygon_c293eff6ca1b41f9aefa8344fac1033a.bindTooltip(
+                `<div>
+                     Hotel de ville
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_a86cff70a9ac4364a3fdd7bf375be5b2 = L.polygon(
+                [[48.896435, 2.243649], [48.902508, 2.240967], [48.906129, 2.258519], [48.906297, 2.266245], [48.905441, 2.26973]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 5, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_ba808148a1c3484696fca352f542b7c1);
+        
+    
+            polygon_a86cff70a9ac4364a3fdd7bf375be5b2.bindTooltip(
+                `<div>
+                     Marceau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_12e19d18626b419183a8aa815a5829a2 = L.featureGroup(
+                {}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+    
+            var polygon_e3c8cbd74d38487fb1dff6ee47ceeb21 = L.polygon(
+                [[48.906294552742324, 2.266398166116926], [48.902283797738605, 2.284270341799327], [48.898400020270955, 2.271065300760704], [48.896657, 2.264661], [48.88688989505178, 2.253756950262125], [48.89567616526661, 2.2337852355532384], [48.900653602651886, 2.2316248960533365], [48.90607328944114, 2.2582158432572785], [48.906294552742324, 2.266398166116926]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 8, "smoothFactor": 1.0, "stroke": true, "weight": 7.5}
+            ).addTo(feature_group_12e19d18626b419183a8aa815a5829a2);
+        
+    
+            var layer_control_6139e82d0cac4626b87a603d7f0cb0c5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_00d13e35a7b8436db78c7de9d5467472,
+                },
+                overlays :  {
+                    "Quartiers de Courbevoie" : feature_group_ba808148a1c3484696fca352f542b7c1,
+                    "D\u00e9limitation Courbevoie" : feature_group_12e19d18626b419183a8aa815a5829a2,
+                },
+            };
+            L.control.layers(
+                layer_control_6139e82d0cac4626b87a603d7f0cb0c5.base_layers,
+                layer_control_6139e82d0cac4626b87a603d7f0cb0c5.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_b7aa460ffe084d0d86053cc4815a7de6);
+        
+</script>

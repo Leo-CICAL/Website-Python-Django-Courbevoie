@@ -1,0 +1,35 @@
+{% load static %}
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="{% static 'courbevoie/connexion.css' %}" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="logo">
+            <img src="{% static 'courbevoie/images/log0' %}" alt="" />
+        </div>
+        <a id = "deconnexion" href="{% url 'courbevoie:acceuil'%}"> Se déconnecter</a>
+        <div id="container">
+            <!-- zone de connexion -->
+            {% csrf_token %}
+            <form action="{% url 'courbevoie:verification_commande' %}" method="POST">
+                <h1>Bienvenue sur l'espace Commande !</h1>
+                <p> Choisissez les produits que vous souhaitez commander : </p>
+                {% csrf_token %}
+                <input type=hidden  name="email" value= "{{ email }}" >
+                {% if error_message %}<p><strong>{{ error_message }} </strong></p> {% endif %}
+                {% for magasin in magasins %}
+                    <h2>{{ magasin }}</h2>
+                    {% for produit in magasin.produit_set.all %}
+                    
+                       <input type = "checkbox" name="{{ produit.nom }}" id="{{ produit.nom }}" >   
+                       <label for="{{ produit.nom }}">{{ produit.nom }}</label><br>
+                       
+                    {% endfor %}
+                {% endfor %}
+
+                <input type="submit" id='submit' value='Passer commande' >
+                
+            </form>
+        </div>
+    </body>

@@ -1,0 +1,39 @@
+{% load static %}
+
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="{% static 'courbevoie/connexion.css' %}" media="screen" type="text/css" />
+    </head>
+    
+    <body>
+        
+        <a id = "Retour" href="{% url 'courbevoie:acceuil'%}"> Retour au menu Connexion </a>
+
+        <div id="container">
+            <!-- zone de connexion -->
+            {% csrf_token %}
+            <form action="{% url 'courbevoie:ajout_personne' %}" method="POST">
+                <h1>Ajout au foyer {{ nom }} </h1>
+                {% if validation %}<p><strong>{{ validation }} </strong></p> {% endif %}
+                {% if error_message %}<p><strong>{{ error_message }} </strong></p> {% endif %}
+                {% csrf_token %}
+                <!--<input type="hidden" value=email name="email"> -->
+                <input type=hidden  name="email" value= "{{ email }}" >
+                <label><b>Prénom</b></label>
+                <input type="text" placeholder="Entrer le prénom" name="prenom" required>
+                
+                {% csrf_token %}
+                <label><b>Restriction</b></label>
+                <select name="restriction">
+                    <option>Aucune</option>
+                    <option>Halal</option>
+                    <option>Végétarien</option>
+                  </select>
+                
+                <input type="submit" id='submit' value='Ajout' >
+                
+            </form>
+        </div>
+        
+    </body>

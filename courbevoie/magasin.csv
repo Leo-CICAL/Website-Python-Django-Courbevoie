@@ -1,0 +1,48 @@
+Nom,Adresse,infos,latitude,longitude,produit
+Monoprix_1,1012 rue de lAbreuvoir Courbevoie,(0149970970),48.8910812,2.2550321,fromage
+Monoprix_2,14 Avenue Léonard de Vinci Courbevoie,(0146919260),48.8966305,2.2369961,éponge
+Monoprix_3,31 Rue Edith Cavell Courbevoie,(0143332342),48.9036408,2.2677447,pastis
+Monoprix_CNIT,2 Place de la Défense Puteaux,(0149064650),48.89179229736328,2.2405149936676025,pates
+Franprix_1,12 Rue Sainte-Marie Courbevoie,(0143331002),48.8933389,2.2583924,jus d_orange
+Franprix_2,30 Avenue de l_Arche Courbevoie,(0146359805),48.8977995,2.2383814,lait
+Franprix_3,80 Avenue Marceau Courbevoie,(0143331486),48.90000534057617,2.2453396320343018,carotte
+Franprix_4,100 Rue de Colombes Courbevoie,(0141169196),48.901084899902344,2.256282329559326,pomme
+Franprix_5,78 Rue Armand Silvestre Courbevoie,(0146670893),48.9001969,2.2632902,pates
+Franprix_6,37-39 Place des Reflets La Défense,(0146985179),48.889825,2.2472078,saucisse
+Franprix_7,56-58 Rue de Bezons Courbevoie,(0147894170),48.9031678,2.2030659,banane
+Franprix_8,Square Henri Regnault Courbevoie,(0970283292),48.8942484,2.2424545,pq
+Franprix_9,63 rue Victor Hugo Courbevoie,(0146350482),48.8842484,2.2424545,pain
+"Franprix_,10",21 boulevard Saint-Denis Courbevoie,(0147688822),48.8966609,2.2599144,salade
+"Franprix_,11",195 boulevard bineau Neuilly-sur-Seine,(0147220637),48.8943747,2.2665492,courgette
+Carrefour_Market,Place Charles de Gaulle Courbevoie,(01 47 88 05 86),48.8950863,2.251882,orange
+Carrefour_City_1,28 Avenue Marceau Courbevoie,(01 47 88 34 27),48.9000597,2.2452637,poire
+Carrefour_City_2,48 Boulevard Georges Clemenceau Courbevoie,(0143340887),48.903318,2.269218,poire
+Carrefour_Expresse_1,1 Rue de Colombes Courbevoie,(01 41 99 91 78),48.8966783,2.2565209,poire
+Carrefour_City_3,5 Boulevard Georges Clemenceau Courbevoie,(01 47 17 82 08),48.9026651,2.2737677,poire
+Carrefour_Expresse_2,82 Quai du Maréchal Joffre Courbevoie,(01 43 33 79 06),48.9015,2.27818,poire
+A2Pas_1,1 Rue de l-Alma Courbevoie,pas de numéros,48.8961,2.24927,poire
+A2Pas_2,1 Avenue Marceau Courbevoie,pas de numéros,48.8978876,2.2472318,poire
+Coccimarket_1,32 Boulevard de Verdun Courbevoie,(01 43 33 96 78),48.9048661,2.2565209,poire
+Coccimarket_2,5 Avenue Gallieni Courbevoie,(01 46 91 05 41),48.9054446,2.2716728,poire
+Petit_Casino,43 Avenue Pasteur Courbevoie,(01 46 67 11 37),48.9029221,2.2701141,poire
+Assefar El Hassan,132 Avenue de la République Courbevoie,(01 41 16 02 40),48.9031736,2.2566262,poire
+Pharmacie Centrale,37 Rue de Bezons Courbevoie,(01 43 33 75 96),,,
+Pharmacie de la Gare,11 Avenue Marceau Courbevoie,(01 43 33 03 67),,,
+Pharmacie Marceau,116 Avenue Marceau Courbevoie,(01 43 33 13 54),,,
+Pharmacie Principale,77 Rue de Bezons Courbevoie,(01 43 33 06 42),,,
+PHARMACIE DU PARC DE BECON,124 Boulevard Saint-Denis Courbevoie,(01 43 33 19 47),,,
+Pharmacie République, 24 Rue dEstienne dOrves Courbevoie,(01 43 33 11 01),,,
+Pharmacie Sainte Marie,11 Rue Sainte-Marie Courbevoie,(01 47 68 98 10),,,
+Pharmacie Guillain,34bis Avenue Marceau Courbevoie,(01 43 33 20 85),,,
+Grande Pharmacie de Bécon,101 Rue Armand Silvestre Courbevoie,(01 43 33 11 41),,,
+Aprium Pharmacie Mona Lisa,106 Avenue de lArche Courbevoie,(01 47 88 18 80),,,
+Pharmacie de l Ouest,120 Rue de Colombes Courbevoie,(01 43 33 08 90),,,
+Pharmacie Forum Santé Hérold,4 Boulevard Saint-Denis Courbevoie,(01 47 88 40 80),,,
+Phamacie Victor Hugo,52 Rue Louis Blanc Courbevoie,(01 47 88 84 48),,,
+Pharmacie Hôtel de Ville,37 Rue Victor Hugo Courbevoie,(01 43 33 20 58),,,
+Pharmacie du Faubourg de l Arche,36 Boulevard de la Mission Marchand Courbevoie,(01 47 88 94 33),,,
+Pharmacie Léonard de Vinci,23 Avenue Léonard de Vinci Courbevoie,(01 47 88 40 80),,,
+Aprium Pharmacie de la Gare de Becon,3 Avenue Séverine Courbevoie,(01 43 33 04 09),,,
+Aprium Pharmacie Charras,21 Rue de Bezons Courbevoie,(01 47 88 11 45),,,
+Pharmacie Sun,36 Boulevard de Verdun Courbevoie,(01 47 68 72 79),,,
+Pharmacie Manhattan,33 Patio Des Reflets Courbevoie,(01 47 67 07 07),,,

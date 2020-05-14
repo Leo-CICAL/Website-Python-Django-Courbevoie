@@ -1,0 +1,33 @@
+{% load static %}
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="{% static 'courbevoie/connexion.css' %}" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="logo">
+            <img src="{% static 'courbevoie/images/log0' %}" alt="" />
+        </div>
+        <a id = "LienAdmin" href="{% url 'courbevoie:acceuil'%}"> Retour à l'acceuil</a>
+        
+        <div id="container">
+            <!-- zone de connexion -->
+            {% csrf_token %}
+            <form action="{% url 'courbevoie:verification_admin' %}" method="POST">
+                <h1>Connexion Admin</h1>
+                {% csrf_token %}
+                {% if error_message %}<p><strong>{{ error_message }} </strong></p> {% endif %}
+                <label><b>Nom d'utilisateur admin</b></label>
+                <input type="text" placeholder="Entrer votre pseudo admin" name="pseudo" required>
+                {% csrf_token %}
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                <input type="submit" id='submit' value='LOGIN' >
+                
+            </form>
+        </div>
+        
+
+
+    </body>

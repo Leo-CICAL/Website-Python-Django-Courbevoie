@@ -1,0 +1,21 @@
+{% load static %}
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="{% static 'courbevoie/connexion.css' %}" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="logo">
+            <img src="{% static 'courbevoie/images/log0' %}" alt="" />
+        </div>
+        <a id = "deconnexion" href="{% url 'courbevoie:acceuil'%}"> Se déconnecter</a>
+        
+        <div id="container">
+            <!-- zone de choix -->
+            <h1>Bienvenue sur votre espace, foyer {{ nom_foyer }} !</h1>
+            <p> Que souhaitez vous faire ? </p>
+            <a id = "commande" href="{% url 'courbevoie:espace_commande'%}?value={{ email }}"> 1) Passer une commande de produit</a>
+            <a id = "ajout" href="{% url 'courbevoie:ajout_personne'%}?value={{ email }}"> 2) Ajouter une nouvelle personne à votre foyer</a>
+            <a id = "carte" href="{% url 'courbevoie:carte_client'%}?value={{ email }}"> 3) Voir la carte de Courbevoie (supérettes, pharmacie) associée à votre adresse (attendre 1 min de chargement)</a>
+        </div>
+    </body>
