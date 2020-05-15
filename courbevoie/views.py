@@ -36,7 +36,7 @@ def verification_commande(request):
                 p.save()
                 commande = Commande(produit=p,foyer = foyer, date = timezone.now())
                 commande.save()
-    return render(request,'courbevoie/acceuil.html',{'email':email})
+    return render(request, 'courbevoie/espace_client.html',{'nom_foyer':foyer.nom,'email':email,'message_commande':'Commande validée !'})
 
 
 def espace_commande(request):
@@ -84,6 +84,29 @@ def validation_inscription(request):
         else:
             return render(request, 'courbevoie/inscription.html',{'error_message':"Email déja utilisé" })
 
+def changement_infos(request):
+        email = request.POST.get('email','')
+        password = request.POST.get('password','')
+        nom = request.POST.get('nom','')
+        num_tel = request.POST.get('num','')
+        adresse = request.POST.get('adresse','')
+        nb_enfants = int(request.POST.get('nb_enfant',''))
+        enceinte = request.POST['enceinte']
+        pers_enceinte = (enceinte=='on')
+        
+        foyer = Foyer.objects.get(email=email)
+        
+        foyer.email = email
+        foyer.mdp = password
+        foyer.nom = nom
+        foyer.num_tel = num_tel
+        foyer.adresse = adresse
+        foyer.nombre_enfants = nb_enfants
+        foyer.enceinte = pers_enceinte
+        foyer.save()
+        return render(request, 'courbevoie/espace_client.html',{'nom_foyer':foyer.nom,'email':email})
+
+
 def ajout_personne(request):
     
     prenom = request.POST.get('prenom','')
@@ -103,13 +126,6 @@ def ajout_personne(request):
     else:
         foyer = Foyer.objects.get(email=email)
         return render(request, 'courbevoie/ajout_nouvelle_personne.html', {'email':email,'nom':foyer.nom})
-
-"""
-def espace_client(request):
-    email = request.POST.get('email','')
-    foyer = Foyer.objects.get(email=email)
-    render(request, 'courbevoie/espace_client.html')
-"""  
 
 def carte_client(request):
     email=request.GET.get('value','')
@@ -137,5 +153,11 @@ def carte_admin(request):
 
 def admin(request):
     return HttpResponseRedirect('http://127.0.0.1:8000/admin/')
+
+def infos_foyer(request):
+    email = request.GET.get('value','')
+    foyer = Foyer.objects.get(email=email)
+    context = {'foyer':foyer,'email':email}
+    return render(request, 'courbevoie/infos_foyer.html',context)
 
     

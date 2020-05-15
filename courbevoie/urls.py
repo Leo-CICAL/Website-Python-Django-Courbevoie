@@ -16,5 +16,7 @@ urlpatterns = [
     #path('espace_client',views.espace_client,name='espace_client'),
     path('carte_client',views.carte_client,name='carte_client'),
     path('carte_admin',views.carte_admin,name='carte_admin'),
+    path('infos_foyer',views.infos_foyer,name='infos_foyer'),
+    path('changement_infos',views.changement_infos,name='changement_infos'),
     path('admin',views.admin, name='admin')
 ]

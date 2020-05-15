@@ -10,12 +10,17 @@
         </div>
         <a id = "deconnexion" href="{% url 'courbevoie:acceuil'%}"> Se déconnecter</a>
         
-        <div id="container">
+        <div id="texte">
             <!-- zone de choix -->
             <h1>Bienvenue sur votre espace, foyer {{ nom_foyer }} !</h1>
+            {% if message_commande %}<p><strong>{{ message_commande }} </strong></p> {% endif %}
             <p> Que souhaitez vous faire ? </p>
             <a id = "commande" href="{% url 'courbevoie:espace_commande'%}?value={{ email }}"> 1) Passer une commande de produit</a>
+            <br></br>
             <a id = "ajout" href="{% url 'courbevoie:ajout_personne'%}?value={{ email }}"> 2) Ajouter une nouvelle personne à votre foyer</a>
+            <br></br>
             <a id = "carte" href="{% url 'courbevoie:carte_client'%}?value={{ email }}"> 3) Voir la carte de Courbevoie (supérettes, pharmacie) associée à votre adresse (attendre 1 min de chargement)</a>
+            <br></br>
+            <a id = "infos" href="{% url 'courbevoie:infos_foyer'%}?value={{ email }}"> 4) Changer les infos du foyer</a>
         </div>
     </body>
